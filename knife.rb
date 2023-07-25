@@ -10,9 +10,9 @@ validation_key           "#{knife[:chef_repo_path]}/chef-validator.pem"
 chef_server_url          "https://chef.example.com/organizations/#{ENV['ORGNAME']}"
 cache_type               'BasicFile'
 cache_options( :path => "#{knife[:chef_repo_path]}/checksums" )
-cookbook_path            ["~/example.com/cookbooks"]
+cookbook_path            ["~/montana/cookbooks"]
 
-# path to environment files
+# Path to environment files
 environment_path "#{knife[:chef_repo_path]}/environments"
 
 # Path to encrypted data bag and secret file
